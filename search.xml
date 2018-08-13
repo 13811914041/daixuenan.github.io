@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[TextView文本控件的使用]]></title>
     <url>%2Fdaixuenan.github.io%2F2018%2F08%2F13%2Fwidget%2Ftextview%2F</url>
-    <content type="text"><![CDATA[原创链接 https://13811914041.github.io/daixuenan.github.io/2018/08/13/widget/textview/]]></content>
+    <content type="text"><![CDATA[原创链接 https://13811914041.github.io/daixuenan.github.io/2018/08/13/widget/textview/TextView是安卓开发常用的控件，其作用是展示文本内容。可以根据需求，展示丰富的视觉效果。首先，打开Android Studio，找到activity_main.xml文件并双击打开。 可以看到，新创建的项目里，已经在activity_main.xml里面已经写了TextView。 activity_main.xml1234567&lt;TextView android:id="@+id/tv_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我是一个文本" android:textColor="#00ff00" android:textSize="24sp" /&gt; 通过上段代码，就可以编辑出一个有文本内容，有id，宽高，颜色，文字大小设置好的TextView。运行，即可看见效果。 id通常我们为一个控件设置id,可以在上下文引用。同时在java代码中我们也通过id来获取一个控件设置它的属性。 layout_width layout_height控件的宽高。通常我们会用wrap_content、match_parent、fill_parent以及dp单位的数值设置它的属性。 text虽然只是个文本属性，但还是要说的。通常规范写法不会直接将文本写在这里，而是将文本配置到res-&gt;values-&gt;strings.xml中引用。 strings.xml1&lt;string name="this_is_a_text"&gt;这是一个文本&lt;/string&gt; 在resources标签内依照格式添加上面的代码。name命名小写，单词以下划线相连。 TextView属性设置1android:text="@string/this_is_a_text" textColor文本颜色也需要配置好以后再引用，位置在res-&gt;values-&gt;colors.xml。 colors.xml1&lt;color name="text_color"&gt;#999999&lt;/color&gt; TextView属性设置1android:textColor="@color/text_color" textSize]]></content>
   </entry>
   <entry>
     <title><![CDATA[开启安卓之旅]]></title>
