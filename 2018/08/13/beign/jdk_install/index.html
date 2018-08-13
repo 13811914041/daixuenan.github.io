@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>JDK安装（Windows） | 云古的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="原创链接 https://13811914041.github.io/daixuenan.github.io/2018/08/13/beign/jdk_install/JDK安装下载的JDK安装包包含jdk和jre两个安装包（我们主要需要jdk，jre算是附带品，开发基本不会用到），所以，我们安装的时候一般建立一个java目录，在java目录下建立jdk和jre两个子目录，分别存放jdk和jre安">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JDK安装（Windows）">
+<meta property="og:url" content="https://13811914041.github.io/daixuenan.github.io/2018/08/13/beign/jdk_install/index.html">
+<meta property="og:site_name" content="云古的博客">
+<meta property="og:description" content="原创链接 https://13811914041.github.io/daixuenan.github.io/2018/08/13/beign/jdk_install/JDK安装下载的JDK安装包包含jdk和jre两个安装包（我们主要需要jdk，jre算是附带品，开发基本不会用到），所以，我们安装的时候一般建立一个java目录，在java目录下建立jdk和jre两个子目录，分别存放jdk和jre安">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://13811914041.github.io/daixuenan.github.io/2018/08/13/beign/jdk_install/java_folder.png">
+<meta property="og:image" content="https://13811914041.github.io/daixuenan.github.io/2018/08/13/beign/jdk_install/java_sub_folder.png">
+<meta property="og:image" content="https://13811914041.github.io/daixuenan.github.io/2018/08/13/beign/jdk_install/jdk_install.png">
+<meta property="og:image" content="https://13811914041.github.io/daixuenan.github.io/2018/08/13/beign/jdk_install/jdk_install2.png">
+<meta property="og:image" content="https://13811914041.github.io/daixuenan.github.io/2018/08/13/beign/jdk_install/jdk_bin_path.png">
+<meta property="og:image" content="https://13811914041.github.io/daixuenan.github.io/2018/08/13/beign/jdk_install/environment_setting.png">
+<meta property="og:image" content="https://13811914041.github.io/daixuenan.github.io/2018/08/13/beign/jdk_install/environment_path.png">
+<meta property="og:image" content="https://13811914041.github.io/daixuenan.github.io/2018/08/13/beign/jdk_install/dos_command.png">
+<meta property="og:image" content="https://13811914041.github.io/daixuenan.github.io/2018/08/13/beign/jdk_install/jdk_environment_exam.png">
+<meta property="og:updated_time" content="2018-08-13T03:07:10.024Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JDK安装（Windows）">
+<meta name="twitter:description" content="原创链接 https://13811914041.github.io/daixuenan.github.io/2018/08/13/beign/jdk_install/JDK安装下载的JDK安装包包含jdk和jre两个安装包（我们主要需要jdk，jre算是附带品，开发基本不会用到），所以，我们安装的时候一般建立一个java目录，在java目录下建立jdk和jre两个子目录，分别存放jdk和jre安">
+<meta name="twitter:image" content="https://13811914041.github.io/daixuenan.github.io/2018/08/13/beign/jdk_install/java_folder.png">
+  
+    <link rel="alternate" href="/daixuenan.github.io/atom.xml" title="云古的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/daixuenan.github.io/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/daixuenan.github.io/" id="logo">云古的博客</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/daixuenan.github.io/">Home</a>
+        
+          <a class="main-nav-link" href="/daixuenan.github.io/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/daixuenan.github.io/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://13811914041.github.io/daixuenan.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-beign/jdk_install" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/daixuenan.github.io/2018/08/13/beign/jdk_install/" class="article-date">
+  <time datetime="2018-08-13T03:07:10.021Z" itemprop="datePublished">2018-08-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      JDK安装（Windows）
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h5 id="原创链接-https-13811914041-github-io-daixuenan-github-io-2018-08-13-beign-jdk-install"><a href="#原创链接-https-13811914041-github-io-daixuenan-github-io-2018-08-13-beign-jdk-install" class="headerlink" title="原创链接 https://13811914041.github.io/daixuenan.github.io/2018/08/13/beign/jdk_install/"></a>原创链接 <a href="https://13811914041.github.io/daixuenan.github.io/2018/08/13/beign/jdk_install/">https://13811914041.github.io/daixuenan.github.io/2018/08/13/beign/jdk_install/</a></h5><h2 id="JDK安装"><a href="#JDK安装" class="headerlink" title="JDK安装"></a>JDK安装</h2><p>下载的JDK安装包包含jdk和jre两个安装包（我们主要需要jdk，jre算是附带品，开发基本不会用到），所以，我们安装的时候一般建立一个java目录，在java目录下建立jdk和jre两个子目录，分别存放jdk和jre安装文件。如下图：</p>
+<p><img src="/daixuenan.github.io/2018/08/13/beign/jdk_install/java_folder.png" alt="Image text"></p>
+<p><img src="/daixuenan.github.io/2018/08/13/beign/jdk_install/java_sub_folder.png" alt="Image text"></p>
+<p>双击打开安装步骤，注意选择jdk文件夹，如下图：</p>
+<p><img src="/daixuenan.github.io/2018/08/13/beign/jdk_install/jdk_install.png" alt="Image text"> </p>
+<p><img src="/daixuenan.github.io/2018/08/13/beign/jdk_install/jdk_install2.png" alt="Image text"></p>
+<p>安装完jdk就是jre,与jdk一样的步骤。找到jdk安装目录复制bin目录路径，并复制到粘贴板上(CTRL + C)，如下图：</p>
+<p><img src="/daixuenan.github.io/2018/08/13/beign/jdk_install/jdk_bin_path.png" alt="Image text"></p>
+<p>安装完成后找到我的电脑图标右键-&gt;属性-&gt;高级系统设置-&gt;环境变量，结果如下图：</p>
+<p><img src="/daixuenan.github.io/2018/08/13/beign/jdk_install/environment_setting.png" alt="Image text"></p>
+<p>双击系统变量下的Path，接下来win7 win8 win10系统界面不太一样，我是win10系统，不一样的页面在弹出框后面加上‘;’，再粘贴复制的路径(CTRL + V)，win10页面如下图：</p>
+<p><img src="/daixuenan.github.io/2018/08/13/beign/jdk_install/environment_path.png" alt="Image text"></p>
+<p>在空处粘贴即可。</p>
+<p>至此，JDK就安装完成了。可以检测一下JDK环境配置。win + R，弹出框输入cmd打开dos窗口，分别输入java -version、javac -version，查看版本号成功，即环境搭建成功，如下图：</p>
+<p><img src="/daixuenan.github.io/2018/08/13/beign/jdk_install/dos_command.png" alt="Image text"></p>
+<p><img src="/daixuenan.github.io/2018/08/13/beign/jdk_install/jdk_environment_exam.png" alt="Image text"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://13811914041.github.io/daixuenan.github.io/2018/08/13/beign/jdk_install/" data-id="cjkrughgu0006pwvada55izz7" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/daixuenan.github.io/2018/08/13/beign/phone_debug/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          真机调试
+        
+      </div>
+    </a>
+  
+  
+    <a href="/daixuenan.github.io/2018/08/13/beign/environment/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">安卓环境搭建（Windows）</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/daixuenan.github.io/archives/2018/08/">August 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/daixuenan.github.io/2018/08/13/widget/textview/">TextView文本控件的使用</a>
+          </li>
+        
+          <li>
+            <a href="/daixuenan.github.io/2018/08/13/start/start_android/">开启安卓之旅</a>
+          </li>
+        
+          <li>
+            <a href="/daixuenan.github.io/2018/08/13/beign/virtual_debug/">模拟器调试</a>
+          </li>
+        
+          <li>
+            <a href="/daixuenan.github.io/2018/08/13/beign/phone_debug/">真机调试</a>
+          </li>
+        
+          <li>
+            <a href="/daixuenan.github.io/2018/08/13/beign/jdk_install/">JDK安装（Windows）</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 云古<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/daixuenan.github.io/" class="mobile-nav-link">Home</a>
+  
+    <a href="/daixuenan.github.io/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/daixuenan.github.io/fancybox/jquery.fancybox.css">
+  <script src="/daixuenan.github.io/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/daixuenan.github.io/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
