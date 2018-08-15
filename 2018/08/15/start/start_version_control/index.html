@@ -130,7 +130,7 @@
 <meta property="og:image" content="https://13811914041.github.io/daixuenan.github.io/2018/08/15/start/start_version_control/merge3.png">
 <meta property="og:image" content="https://13811914041.github.io/daixuenan.github.io/2018/08/15/start/start_version_control/merge4.png">
 <meta property="og:image" content="https://13811914041.github.io/daixuenan.github.io/2018/08/15/start/start_version_control/version_control4.png">
-<meta property="og:updated_time" content="2018-08-15T03:53:42.377Z">
+<meta property="og:updated_time" content="2018-08-15T04:01:01.318Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="版本控制环境搭建">
 <meta name="twitter:description" content="原创地址 https://13811914041.github.io/daixuenan.github.io/日常工作我们通常会将写好的代码上传到服务器，这时候就需要版本控制工具。一般我们常用的版本控制工具是git和svn，在这里我说下最常用的Git的环境搭建。 Gitgit下载 安装Git下载git然后安装，一路next，全部默认即可。安装git后，在文件夹内右键就可以看见多出了git的功能。选">
@@ -375,7 +375,7 @@
                 
               
 
-              <time title="创建时间：2018-08-15 11:53:42" itemprop="dateCreated datePublished" datetime="2018-08-15T11:53:42+08:00">2018-08-15</time>
+              <time title="创建时间：2018-08-15 12:01:01" itemprop="dateCreated datePublished" datetime="2018-08-15T12:01:01+08:00">2018-08-15</time>
             
 
             
@@ -419,15 +419,16 @@
 <h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><p>下载git然后安装，一路next，全部默认即可。安装git后，在文件夹内右键就可以看见多出了git的功能。选择Git Bash Here，进入git命令窗口。安装流程很简单。</p>
 <p>接下来打开Android Studio，Settings-&gt;Version Control-&gt;Git，在Path to Git executable一栏配置git安装路径，添加Git安装目录下的cmd/git.exe文件即可，添加成功后可点击Test按钮测试，成功提示如下图：</p>
 <p><img src="/daixuenan.github.io/2018/08/15/start/start_version_control/git_test.png" alt="image"></p>
-<p>接下来不是立马使用git，而是要先配置SSH。Git版本控制一般存在Github，码云，GitLab等，而且一般在设置页面都会有相应的教程。</p>
-<h3 id="配置SSH"><a href="#配置SSH" class="headerlink" title="配置SSH"></a>配置SSH</h3><p>生成 sshkey:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;xxxxx@xxxxx.com&quot;  </span><br><span class="line"></span><br><span class="line"># xxxxx@xxxxx.com是平台注册的邮箱</span><br><span class="line"># Generating public/private rsa key pair...</span><br><span class="line"># 三次回车即可生成 ssh key</span><br></pre></td></tr></table></figure></p>
+<p>接下来不是立马使用git，而是要先配置SSH。Git仓库平台常用的有Github，码云，GitLab等，而且一般在设置页面都会有相应的教程。</p>
+<h3 id="配置SSH"><a href="#配置SSH" class="headerlink" title="配置SSH"></a>配置SSH</h3><p>找个文件夹，鼠标空白处右键，Git Bash Here。</p>
+<p>生成 sshkey:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;xxxxx@xxxxx.com&quot;  </span><br><span class="line"></span><br><span class="line"># xxxxx@xxxxx.com是平台注册的邮箱</span><br><span class="line"># Generating public/private rsa key pair...</span><br><span class="line"># 三次回车即可生成 ssh key</span><br></pre></td></tr></table></figure></p>
 <p>查看你的 public key<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure></p>
 <p><img src="/daixuenan.github.io/2018/08/15/start/start_version_control/version_control_ssh.png" alt="iamge"></p>
 <p>然后复制key配置到对应的平台上，包括开头ssh-rsa和结尾邮箱内容。</p>
-<h3 id="Android-Studio-Git操作"><a href="#Android-Studio-Git操作" class="headerlink" title="Android Studio Git操作"></a>Android Studio Git操作</h3><p>首先，我们从Git拉项目。如下图：</p>
+<h3 id="Android-Studio-Git操作"><a href="#Android-Studio-Git操作" class="headerlink" title="Android Studio Git操作"></a>Android Studio Git操作</h3><p>首先，我们拉取Git项目。如下图：</p>
 <p>点击Check out project from Version Control，选择Git<br><img src="/daixuenan.github.io/2018/08/15/start/start_version_control/checkout_project1.png" alt="image"></p>
 <p>Url可以暂时先用我这个<a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:13811914041/MyApplication.git，或者自己有的话也可以用自己的。第二个是项目存放路径，需要自己选；最后一个是项目名称，通常是默认用Git仓库的文件夹名称，也可以自己编辑。<br><img src="/daixuenan.github.io/2018/08/15/start/start_version_control/checkout_project2.png" alt="image"></p>
-<p>选择默认的第一个，接下来全部一路next，直到完成，然后再等待编译成功即可。<br><img src="/daixuenan.github.io/2018/08/15/start/start_version_control/checkout_project3.png" alt="image"></p>
+<p>Gradle版本，选择默认的第一个，接下来全部一路next，直到完成，然后再等待编译成功即可。<br><img src="/daixuenan.github.io/2018/08/15/start/start_version_control/checkout_project3.png" alt="image"></p>
 <p>代码拉下来，编译好之后，就可以编辑代码了。编辑完代码可以在Android Studio内部通过版本控制提交和拉取代码。</p>
 <p>Android Studio页面右上角控制面板有版本控制上传、下拉的快捷键(不同版本的Android Studio图标可能有差异，不过位置是固定在这个位置的，比较好找)，如下图：<br><img src="/daixuenan.github.io/2018/08/15/start/start_version_control/version_control1.png" alt="image"></p>
 <p>左边的按钮是拉取最新代码，通常默认即可<br><img src="/daixuenan.github.io/2018/08/15/start/start_version_control/version_control2.png" alt="image"></p>
