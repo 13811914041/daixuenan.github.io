@@ -108,28 +108,20 @@
 
 
 
-  <meta name="description" content="原创链接 https://13811914041.github.io/daixuenan.github.io/2018/08/13/beign/virtual_debug/通常调试Android代码的时候，我们一般习惯用真机调试，因为真机功能全，而且速度相对快一些。但是有时候没有真机的环境下，就需要模拟器来调试代码。Android Studio有自带的虚拟机，可根据自己需求的选择API版本。除了安">
+  <meta name="description" content="原创地址 https://13811914041.github.io/daixuenan.github.io/下面我们可以开始安卓开发了，不过在开始之前，我觉得有必要介绍一下安卓project的目录结构，让大家认清各个文件类型的作用，在写代码之前对安卓有个大体的了解。 安卓目录可以有多种表现形式，如下图：  常用的有project和android两种视图，project目录结构将项目所有文件都展示">
 <meta property="og:type" content="article">
-<meta property="og:title" content="模拟器调试">
-<meta property="og:url" content="https://13811914041.github.io/daixuenan.github.io/2018/08/14/beign/virtual_debug/index.html">
+<meta property="og:title" content="开启安卓之旅">
+<meta property="og:url" content="https://13811914041.github.io/daixuenan.github.io/2018/08/15/develop/start/start_android/index.html">
 <meta property="og:site_name" content="云古的博客">
-<meta property="og:description" content="原创链接 https://13811914041.github.io/daixuenan.github.io/2018/08/13/beign/virtual_debug/通常调试Android代码的时候，我们一般习惯用真机调试，因为真机功能全，而且速度相对快一些。但是有时候没有真机的环境下，就需要模拟器来调试代码。Android Studio有自带的虚拟机，可根据自己需求的选择API版本。除了安">
+<meta property="og:description" content="原创地址 https://13811914041.github.io/daixuenan.github.io/下面我们可以开始安卓开发了，不过在开始之前，我觉得有必要介绍一下安卓project的目录结构，让大家认清各个文件类型的作用，在写代码之前对安卓有个大体的了解。 安卓目录可以有多种表现形式，如下图：  常用的有project和android两种视图，project目录结构将项目所有文件都展示">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://13811914041.github.io/daixuenan.github.io/2018/08/14/beign/virtual_debug/xiaoyao.png">
-<meta property="og:image" content="https://13811914041.github.io/daixuenan.github.io/2018/08/14/beign/virtual_debug/xiaoyao2.png">
-<meta property="og:image" content="https://13811914041.github.io/daixuenan.github.io/2018/08/14/beign/virtual_debug/debug_app.png">
-<meta property="og:image" content="https://13811914041.github.io/daixuenan.github.io/2018/08/14/beign/virtual_debug/debug_app2.png">
-<meta property="og:image" content="https://13811914041.github.io/daixuenan.github.io/2018/08/14/beign/virtual_debug/debug_app3.png">
-<meta property="og:image" content="https://13811914041.github.io/daixuenan.github.io/2018/08/14/beign/virtual_debug/create_virtual1.png">
-<meta property="og:image" content="https://13811914041.github.io/daixuenan.github.io/2018/08/14/beign/virtual_debug/create_virtual2.png">
-<meta property="og:image" content="https://13811914041.github.io/daixuenan.github.io/2018/08/14/beign/virtual_debug/create_virtual3.png">
-<meta property="og:image" content="https://13811914041.github.io/daixuenan.github.io/2018/08/14/beign/virtual_debug/create_virtual4.png">
-<meta property="og:image" content="https://13811914041.github.io/daixuenan.github.io/2018/08/14/beign/virtual_debug/create_virtual_finish.png">
-<meta property="og:updated_time" content="2018-08-14T05:19:42.951Z">
+<meta property="og:image" content="https://13811914041.github.io/daixuenan.github.io/2018/08/15/develop/start/start_android/select_view.png">
+<meta property="og:image" content="https://13811914041.github.io/daixuenan.github.io/2018/08/15/develop/start/start_android/folder.png">
+<meta property="og:updated_time" content="2018-08-15T08:08:13.734Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="模拟器调试">
-<meta name="twitter:description" content="原创链接 https://13811914041.github.io/daixuenan.github.io/2018/08/13/beign/virtual_debug/通常调试Android代码的时候，我们一般习惯用真机调试，因为真机功能全，而且速度相对快一些。但是有时候没有真机的环境下，就需要模拟器来调试代码。Android Studio有自带的虚拟机，可根据自己需求的选择API版本。除了安">
-<meta name="twitter:image" content="https://13811914041.github.io/daixuenan.github.io/2018/08/14/beign/virtual_debug/xiaoyao.png">
+<meta name="twitter:title" content="开启安卓之旅">
+<meta name="twitter:description" content="原创地址 https://13811914041.github.io/daixuenan.github.io/下面我们可以开始安卓开发了，不过在开始之前，我觉得有必要介绍一下安卓project的目录结构，让大家认清各个文件类型的作用，在写代码之前对安卓有个大体的了解。 安卓目录可以有多种表现形式，如下图：  常用的有project和android两种视图，project目录结构将项目所有文件都展示">
+<meta name="twitter:image" content="https://13811914041.github.io/daixuenan.github.io/2018/08/15/develop/start/start_android/select_view.png">
 
 
 
@@ -138,7 +130,7 @@
 
 
 
-  <link rel="canonical" href="https://13811914041.github.io/daixuenan.github.io/2018/08/14/beign/virtual_debug/"/>
+  <link rel="canonical" href="https://13811914041.github.io/daixuenan.github.io/2018/08/15/develop/start/start_android/"/>
 
 
 
@@ -148,7 +140,7 @@
   };
 </script>
 
-  <title>模拟器调试 | 云古的博客</title>
+  <title>开启安卓之旅 | 云古的博客</title>
   
 
 
@@ -244,6 +236,14 @@
         
         
           
+          <li class="menu-item menu-item-categories">
+    <a href="/daixuenan.github.io/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+  </li>
+        
+        
+        
+          
           <li class="menu-item menu-item-archives">
     <a href="/daixuenan.github.io/archives/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-archive "文章""></i> <br />归档</a>
@@ -328,7 +328,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://13811914041.github.io/daixuenan.github.io/daixuenan.github.io/2018/08/14/beign/virtual_debug/">
+    <link itemprop="mainEntityOfPage" href="https://13811914041.github.io/daixuenan.github.io/daixuenan.github.io/2018/08/15/develop/start/start_android/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="云古">
@@ -345,7 +345,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">模拟器调试
+          <h1 class="post-title" itemprop="name headline">开启安卓之旅
               
             
           </h1>
@@ -370,12 +370,30 @@
                 
               
 
-              <time title="创建时间：2018-08-14 13:19:42" itemprop="dateCreated datePublished" datetime="2018-08-14T13:19:42+08:00">2018-08-14</time>
+              <time title="创建时间：2018-08-15 16:08:13" itemprop="dateCreated datePublished" datetime="2018-08-15T16:08:13+08:00">2018-08-15</time>
             
 
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/daixuenan.github.io/categories/Android开发/" itemprop="url" rel="index"><span itemprop="name">Android开发</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -409,28 +427,33 @@
       
 
       
-        <h5 id="原创链接-https-13811914041-github-io-daixuenan-github-io-2018-08-13-beign-virtual-debug"><a href="#原创链接-https-13811914041-github-io-daixuenan-github-io-2018-08-13-beign-virtual-debug" class="headerlink" title="原创链接 https://13811914041.github.io/daixuenan.github.io/2018/08/13/beign/virtual_debug/"></a>原创链接 <a href="https://13811914041.github.io/daixuenan.github.io/2018/08/13/beign/virtual_debug/">https://13811914041.github.io/daixuenan.github.io/2018/08/13/beign/virtual_debug/</a></h5><p>通常调试Android代码的时候，我们一般习惯用真机调试，因为真机功能全，而且速度相对快一些。但是有时候没有真机的环境下，就需要模拟器来调试代码。Android Studio有自带的虚拟机，可根据自己需求的选择API版本。除了安卓自带的模拟器，还有第三方模拟器，功能强大且性能优秀，如逍遥模拟器、夜神模拟器、腾讯的模拟器。第三方的模拟器主要是用来玩的，由于其性能的优越性，拿来调试项目也是不错的选择。</p>
-<h3 id="在这里，我只重点介绍第三方模拟器调试。因为第三方模拟器搭建起来比较方便，速度快；Android-Studio自带的模拟器还是很慢的，不太适合实际开发调试。下面以逍遥模拟器为例："><a href="#在这里，我只重点介绍第三方模拟器调试。因为第三方模拟器搭建起来比较方便，速度快；Android-Studio自带的模拟器还是很慢的，不太适合实际开发调试。下面以逍遥模拟器为例：" class="headerlink" title="在这里，我只重点介绍第三方模拟器调试。因为第三方模拟器搭建起来比较方便，速度快；Android Studio自带的模拟器还是很慢的，不太适合实际开发调试。下面以逍遥模拟器为例："></a>在这里，我只重点介绍第三方模拟器调试。因为第三方模拟器搭建起来比较方便，速度快；Android Studio自带的模拟器还是很慢的，不太适合实际开发调试。下面以逍遥模拟器为例：</h3><h1 id="逍遥模拟器调试"><a href="#逍遥模拟器调试" class="headerlink" title="逍遥模拟器调试"></a>逍遥模拟器调试</h1><h2 id="逍遥模拟器下载"><a href="#逍遥模拟器下载" class="headerlink" title="逍遥模拟器下载"></a><a href="http://www.xyaz.cn/" target="_blank" rel="noopener">逍遥模拟器下载</a></h2><p>下载安装方法不多做介绍，和普通软件安装流程一样。注意选择个人版即可。下载完成后双击图标打开模拟器，第一次打开需要初始化，比较慢。</p>
-<p><img src="/daixuenan.github.io/2018/08/14/beign/virtual_debug/xiaoyao.png" alt="image"></p>
-<p>里面会推荐很多游戏，要禁得住诱惑。</p>
-<p><img src="/daixuenan.github.io/2018/08/14/beign/virtual_debug/xiaoyao2.png" alt="image"></p>
-<p>此时已经可以调试了。打开项目，点击debug调试按钮</p>
-<p><img src="/daixuenan.github.io/2018/08/14/beign/virtual_debug/debug_app.png" alt="image"></p>
-<p>选择调试的设备，点击OK即可开始安装，需等待，可依据底部状态条状态。如果没有设备，将模拟器关掉重新打开即可。</p>
-<p><img src="/daixuenan.github.io/2018/08/14/beign/virtual_debug/debug_app2.png" alt="image"></p>
-<p><img src="/daixuenan.github.io/2018/08/14/beign/virtual_debug/debug_app3.png" alt="image"></p>
-<p>至此，就可以修改代码调试APP了。</p>
-<h1 id="安卓自带模拟器调试"><a href="#安卓自带模拟器调试" class="headerlink" title="安卓自带模拟器调试"></a>安卓自带模拟器调试</h1><p>如下图：</p>
-<p><img src="/daixuenan.github.io/2018/08/14/beign/virtual_debug/create_virtual1.png" alt="image"></p>
-<p>然后点击Create Virtual Device，选择设备类型及型号（默认即可），next，</p>
-<p><img src="/daixuenan.github.io/2018/08/14/beign/virtual_debug/create_virtual2.png" alt="image"></p>
-<p>选择模拟器API版本，可选择一个点击download，等待下载安装完成后选中并点击next。我下载的是API 25，7.1.1版本。</p>
-<p><img src="/daixuenan.github.io/2018/08/14/beign/virtual_debug/create_virtual3.png" alt="image"></p>
-<p>输入虚拟机名称，选择横竖屏。通常手机是竖屏，平板是横屏。一般情况我们选默认的竖屏就好。点击finish即可完成虚拟机创建。</p>
-<p><img src="/daixuenan.github.io/2018/08/14/beign/virtual_debug/create_virtual4.png" alt="image"></p>
-<p><img src="/daixuenan.github.io/2018/08/14/beign/virtual_debug/create_virtual_finish.png" alt="image"></p>
-<p>点击启动按钮开启虚拟机，等待虚拟机启动成功后，即可调试。（这个虚拟机我没有成功打开）</p>
-<h5 id="原创地址-https-13811914041-github-io-daixuenan-github-io"><a href="#原创地址-https-13811914041-github-io-daixuenan-github-io" class="headerlink" title="原创地址 https://13811914041.github.io/daixuenan.github.io/"></a>原创地址 <a href="https://13811914041.github.io/daixuenan.github.io/">https://13811914041.github.io/daixuenan.github.io/</a></h5>
+        <h5 id="原创地址-https-13811914041-github-io-daixuenan-github-io"><a href="#原创地址-https-13811914041-github-io-daixuenan-github-io" class="headerlink" title="原创地址 https://13811914041.github.io/daixuenan.github.io/"></a>原创地址 <a href="https://13811914041.github.io/daixuenan.github.io/">https://13811914041.github.io/daixuenan.github.io/</a></h5><p>下面我们可以开始安卓开发了，不过在开始之前，我觉得有必要介绍一下安卓project的目录结构，让大家认清各个文件类型的作用，在写代码之前对安卓有个大体的了解。</p>
+<p>安卓目录可以有多种表现形式，如下图：</p>
+<p><img src="/daixuenan.github.io/2018/08/15/develop/start/start_android/select_view.png" alt="image"></p>
+<p>常用的有project和android两种视图，project目录结构将项目所有文件都展示出来；Android目录结构是安卓项目特有的结构，只展示可编辑的项目文件目录。本人比较习惯Android目录结构，因为简洁，找文件方便。我也推荐使用Android目录结构，包括接下来的目录结构介绍也是根据Android结构来。project目录结构也可一一对应。</p>
+<p><img src="/daixuenan.github.io/2018/08/15/develop/start/start_android/folder.png" alt="iamge"></p>
+<p>如上图所示，我们能看见app目录，app下有mainifest、java、res文件夹。library目录，下面还有Gradle Scripts及下面一群文件。library是moudle依赖库，结构与app基本一样，不过不适合现在就说，在后面会写。</p>
+<h3 id="app"><a href="#app" class="headerlink" title="app"></a>app</h3><p>项目主目录。主要的业务逻辑都会在这里实现。</p>
+<h3 id="Gradle-Scripts"><a href="#Gradle-Scripts" class="headerlink" title="Gradle Scripts"></a>Gradle Scripts</h3><p>这个不是一个目录，而是Android目录结构将配置文件都提取出来统一放在这一层管理，这也是我喜欢Android视图结构的原因之一。</p>
+<h3 id="mainifest"><a href="#mainifest" class="headerlink" title="mainifest"></a>mainifest</h3><p>这个目录下有一个AndroidMainifest.xml文件，主要用来配置权限和一些Activity(可以理解为页面)，Service(应用后台服务)，以及一些其他应用的信息。</p>
+<h3 id="java"><a href="#java" class="headerlink" title="java"></a>java</h3><p>这个目录存放需要实现的业务逻辑的代码</p>
+<h3 id="res"><a href="#res" class="headerlink" title="res"></a>res</h3><p>这个是资源文件夹，里面存放项目的资源文件。</p>
+<h3 id="drawable-和-mipmap"><a href="#drawable-和-mipmap" class="headerlink" title="drawable 和 mipmap"></a>drawable 和 mipmap</h3><p>图片资源文件，目前我比较习惯drawable为主。二选一即可。</p>
+<h3 id="layout"><a href="#layout" class="headerlink" title="layout"></a>layout</h3><p>静态布局文件。Android的页面往往都是先实现layout文件下面的.xml静态布局文件，然后用java代码来控制布局文件的属性，以达到各式各样的交互效果。通常我们用Activity、Fragment来控制，有时候我们也会自定义控件、布局、对话框之类，可以调用静态布局文件。</p>
+<h3 id="values"><a href="#values" class="headerlink" title="values"></a>values</h3><p>values文件夹下存放的都是一些设置好的值或者样式。colors里面可以设置颜色属性；strings可以配置可供全局使用的字符串；styles可以设置各种样式，包括主题风格到具体控件样式。</p>
+<p>除此之外还有其他一些不可见的文件。attrs用来定义各控件布局的属性，且支持在静态layout布局配置；dimens定义全局的数值，包括长宽高、文字的大小；arrays顾名思义数组，将各类值归纳到一个数组中供全局调用。</p>
+<p>以上文件均各自实现各自名称相应的功能，不过我也可以在strings.xml添加colors的全局配置，虽然有各自的名字，但是使用是很灵活的。不过我们一般统一规范，该在哪里写就在哪里写，这也是必须严格注意的。</p>
+<h3 id="build-gradle"><a href="#build-gradle" class="headerlink" title="build.gradle"></a>build.gradle</h3><p>这个是项目的主要配置文件。一般新建的项目会有两个build.gradle文件，看后面的()内容，Project开头的是项目的全局配置文件，Module开头的是各自模块（module）的配置文件。如果后面添加了很多module依赖，则会出现相应的build.gradle配置文件。()内冒号后面是该Project/Module的名字。</p>
+<h2 id="以下是不需要关注太多的，知道就行"><a href="#以下是不需要关注太多的，知道就行" class="headerlink" title="以下是不需要关注太多的，知道就行"></a>以下是不需要关注太多的，知道就行</h2><h3 id="gradle-wrapper-properties"><a href="#gradle-wrapper-properties" class="headerlink" title="gradle-wrapper.properties"></a>gradle-wrapper.properties</h3><p>项目gradle的配置文件。通常Android Studio会自动配置好。除非出了问题，才需要处理。</p>
+<h3 id="proguard-rules-pro"><a href="#proguard-rules-pro" class="headerlink" title="proguard-rules.pro"></a>proguard-rules.pro</h3><p>配置项目的混淆代码。目前有免费的线上加固包，挺方便的。</p>
+<h3 id="gradle-properties"><a href="#gradle-properties" class="headerlink" title="gradle.properties"></a>gradle.properties</h3><p>配置静态变量以供build.gradle调用。</p>
+<h3 id="local-properties"><a href="#local-properties" class="headerlink" title="local.properties"></a>local.properties</h3><p>通常自动生成，不用管。配置静态变量以供java代码调用。这里一般会有SDK路径配置，有NDK的话还会有NDK路径配置。</p>
+<h3 id="local-properties-1"><a href="#local-properties-1" class="headerlink" title="local.properties"></a>local.properties</h3><p>依赖的modules，自动生成，不用管。</p>
+<h2 id="另外还有一些其他目录"><a href="#另外还有一些其他目录" class="headerlink" title="另外还有一些其他目录"></a>另外还有一些其他目录</h2><h3 id="libs"><a href="#libs" class="headerlink" title="libs"></a>libs</h3><p>app目录同级目录。这个文件夹需要切换到project目录结构才能看见，里面存放库文件。若有.so库，则会有相对应的jniLibs文件生成（需要一些配置）。一般本地.jar包、本地.so文件、.arr包在这里添加。</p>
+<h3 id="assets"><a href="#assets" class="headerlink" title="assets"></a>assets</h3><p>app目录同级目录。也是存放资源文件为主，与res的区别是这里存放一些特殊的文件及一些较大文件。如txt文本、本地音视频等。较大的图片也可以存放在这里。</p>
+<h3 id="anim"><a href="#anim" class="headerlink" title="anim"></a>anim</h3><p>res目录下的子目录。通常存放一些动画属性。</p>
+<h3 id="menu"><a href="#menu" class="headerlink" title="menu"></a>menu</h3><p>res目录下的子目录。菜单的配置。较少用。通常都是自行在代码中实现。</p>
+<h5 id="关于这些目录结构下的文件的配置用法，后面会根据实例写到。接下来，就可以写代码了。"><a href="#关于这些目录结构下的文件的配置用法，后面会根据实例写到。接下来，就可以写代码了。" class="headerlink" title="关于这些目录结构下的文件的配置用法，后面会根据实例写到。接下来，就可以写代码了。"></a>关于这些目录结构下的文件的配置用法，后面会根据实例写到。接下来，就可以写代码了。</h5><h5 id="原创地址-https-13811914041-github-io-daixuenan-github-io-1"><a href="#原创地址-https-13811914041-github-io-daixuenan-github-io-1" class="headerlink" title="原创地址 https://13811914041.github.io/daixuenan.github.io/"></a>原创地址 <a href="https://13811914041.github.io/daixuenan.github.io/">https://13811914041.github.io/daixuenan.github.io/</a></h5>
       
     </div>
 
@@ -457,8 +480,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/daixuenan.github.io/2018/08/14/start/start_android/" rel="next" title="开启安卓之旅">
-                <i class="fa fa-chevron-left"></i> 开启安卓之旅
+              <a href="/daixuenan.github.io/2018/08/15/develop/beign/virtual_debug/" rel="next" title="模拟器调试">
+                <i class="fa fa-chevron-left"></i> 模拟器调试
               </a>
             
           </div>
@@ -467,8 +490,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/daixuenan.github.io/2018/08/14/beign/phone_debug/" rel="prev" title="真机调试">
-                真机调试 <i class="fa fa-chevron-right"></i>
+              <a href="/daixuenan.github.io/2018/08/15/develop/start/start_version_control/" rel="prev" title="版本控制环境搭建">
+                版本控制环境搭建 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -544,12 +567,27 @@
                 
                   <a href="/daixuenan.github.io/archives/">
                 
-                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
               
 
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/daixuenan.github.io/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
               
 
               
@@ -591,7 +629,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#原创链接-https-13811914041-github-io-daixuenan-github-io-2018-08-13-beign-virtual-debug"><span class="nav-number">1.</span> <span class="nav-text">原创链接 https://13811914041.github.io/daixuenan.github.io/2018/08/13/beign/virtual_debug/</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在这里，我只重点介绍第三方模拟器调试。因为第三方模拟器搭建起来比较方便，速度快；Android-Studio自带的模拟器还是很慢的，不太适合实际开发调试。下面以逍遥模拟器为例："><span class="nav-number"></span> <span class="nav-text">在这里，我只重点介绍第三方模拟器调试。因为第三方模拟器搭建起来比较方便，速度快；Android Studio自带的模拟器还是很慢的，不太适合实际开发调试。下面以逍遥模拟器为例：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#逍遥模拟器调试"><span class="nav-number"></span> <span class="nav-text">逍遥模拟器调试</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#逍遥模拟器下载"><span class="nav-number"></span> <span class="nav-text">逍遥模拟器下载</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安卓自带模拟器调试"><span class="nav-number"></span> <span class="nav-text">安卓自带模拟器调试</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#原创地址-https-13811914041-github-io-daixuenan-github-io"><span class="nav-number">1.</span> <span class="nav-text">原创地址 https://13811914041.github.io/daixuenan.github.io/</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#原创地址-https-13811914041-github-io-daixuenan-github-io"><span class="nav-number">1.</span> <span class="nav-text">原创地址 https://13811914041.github.io/daixuenan.github.io/</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#app"><span class="nav-number"></span> <span class="nav-text">app</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Gradle-Scripts"><span class="nav-number"></span> <span class="nav-text">Gradle Scripts</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mainifest"><span class="nav-number"></span> <span class="nav-text">mainifest</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#java"><span class="nav-number"></span> <span class="nav-text">java</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#res"><span class="nav-number"></span> <span class="nav-text">res</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#drawable-和-mipmap"><span class="nav-number"></span> <span class="nav-text">drawable 和 mipmap</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#layout"><span class="nav-number"></span> <span class="nav-text">layout</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#values"><span class="nav-number"></span> <span class="nav-text">values</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#build-gradle"><span class="nav-number"></span> <span class="nav-text">build.gradle</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#以下是不需要关注太多的，知道就行"><span class="nav-number"></span> <span class="nav-text">以下是不需要关注太多的，知道就行</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#gradle-wrapper-properties"><span class="nav-number"></span> <span class="nav-text">gradle-wrapper.properties</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#proguard-rules-pro"><span class="nav-number"></span> <span class="nav-text">proguard-rules.pro</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gradle-properties"><span class="nav-number"></span> <span class="nav-text">gradle.properties</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#local-properties"><span class="nav-number"></span> <span class="nav-text">local.properties</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#local-properties-1"><span class="nav-number"></span> <span class="nav-text">local.properties</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#另外还有一些其他目录"><span class="nav-number"></span> <span class="nav-text">另外还有一些其他目录</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#libs"><span class="nav-number"></span> <span class="nav-text">libs</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#assets"><span class="nav-number"></span> <span class="nav-text">assets</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#anim"><span class="nav-number"></span> <span class="nav-text">anim</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#menu"><span class="nav-number"></span> <span class="nav-text">menu</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#关于这些目录结构下的文件的配置用法，后面会根据实例写到。接下来，就可以写代码了。"><span class="nav-number">1.</span> <span class="nav-text">关于这些目录结构下的文件的配置用法，后面会根据实例写到。接下来，就可以写代码了。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#原创地址-https-13811914041-github-io-daixuenan-github-io-1"><span class="nav-number">2.</span> <span class="nav-text">原创地址 https://13811914041.github.io/daixuenan.github.io/</span></a></li></ol></div>
             
 
           </div>
