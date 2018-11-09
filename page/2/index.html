@@ -325,7 +325,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://13811914041.github.io/daixuenan.github.io/daixuenan.github.io/2018/08/13/develop/beign/abstract/">
+    <link itemprop="mainEntityOfPage" href="https://13811914041.github.io/daixuenan.github.io/daixuenan.github.io/2018/08/13/develop/beign/environment/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="云古">
@@ -344,8 +344,8 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/daixuenan.github.io/2018/08/13/develop/beign/abstract/" itemprop="url">
-                  摘要
+                <a class="post-title-link" href="/daixuenan.github.io/2018/08/13/develop/beign/environment/" itemprop="url">
+                  安卓环境搭建（Windows）
                 </a>
               
             
@@ -388,7 +388,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-08-15 16:38:45" itemprop="dateModified" datetime="2018-08-15T16:38:45+08:00">2018-08-15</time>
+                <time title="修改时间：2018-08-15 16:38:51" itemprop="dateModified" datetime="2018-08-15T16:38:51+08:00">2018-08-15</time>
               
             
           </span>
@@ -443,7 +443,24 @@
       
         
           
-            <h6 id="原创地址-https-13811914041-github-io-daixuenan-github-io"><a href="#原创地址-https-13811914041-github-io-daixuenan-github-io" class="headerlink" title="原创地址 https://13811914041.github.io/daixuenan.github.io/"></a>原创地址 <a href="https://13811914041.github.io/daixuenan.github.io/">https://13811914041.github.io/daixuenan.github.io/</a></h6><p>安卓开发工作也已经几年了，期间想过要建立一个自己的blog，只是一直不知道该写什么。现在想想，既然不知道写什么，那就把自己这些年的积累写下来吧，以梳理过的结构，回顾一下自己从零开始学习安卓至今的历程。想学安卓的小伙伴们也欢迎来这边交流，也欢迎老司机及时指出不正之处。</p>
+            <h6 id="原创地址-https-13811914041-github-io-daixuenan-github-io"><a href="#原创地址-https-13811914041-github-io-daixuenan-github-io" class="headerlink" title="原创地址 https://13811914041.github.io/daixuenan.github.io/"></a>原创地址 <a href="https://13811914041.github.io/daixuenan.github.io/">https://13811914041.github.io/daixuenan.github.io/</a></h6><h2 id="JDK下载"><a href="#JDK下载" class="headerlink" title="JDK下载"></a><a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="noopener">JDK下载</a></h2><p>没有JDK环境的话需要下载安装。注意勾选接受条款，并选择对应的版本，我机器是windows 64位。如下图：</p>
+<p><img src="/daixuenan.github.io/2018/08/13/develop/beign/environment/jdk_download.png" alt="Image text"></p>
+<h2 id="Android-SDK下载"><a href="#Android-SDK下载" class="headerlink" title="Android SDK下载"></a><a href="http://tools.android-studio.org/index.php/sdk" target="_blank" rel="noopener">Android SDK下载</a></h2><p>Android SDK在安装Android Studio时会提示安装，但是我比较习惯全部自己来，也是受到当初ecplise的安装习惯影响。</p>
+<h2 id="Android-Studio下载"><a href="#Android-Studio下载" class="headerlink" title="Android Studio下载"></a><a href="http://www.android-studio.org/" target="_blank" rel="noopener">Android Studio下载</a></h2><p>Android Studio是目前主要的安卓开发软件，ecplise我也已经很少用了。JDK和Android SDK在Android Studio安装的时候会提示自动安装，但是我觉得不太好管理，所以全部手动安装了。</p>
+<p>以上软件基本都是下载最新版。如下图：</p>
+<p><img src="/daixuenan.github.io/2018/08/13/develop/beign/environment/download_packages.png" alt="Image text"></p>
+<h3 id="然后，开始搭建环境"><a href="#然后，开始搭建环境" class="headerlink" title="然后，开始搭建环境"></a>然后，开始搭建环境</h3><h2 id="JDK安装"><a href="#JDK安装" class="headerlink" title="JDK安装"></a><a href="jdk_install">JDK安装</a></h2><h2 id="Android-SDK和Android-Studio安装没什么好说的，一路安装即可。"><a href="#Android-SDK和Android-Studio安装没什么好说的，一路安装即可。" class="headerlink" title="Android SDK和Android Studio安装没什么好说的，一路安装即可。"></a>Android SDK和Android Studio安装没什么好说的，一路安装即可。</h2><p>安装完成后打开Android Studio，如下图：</p>
+<p><img src="/daixuenan.github.io/2018/08/13/develop/beign/environment/as_installed.png" alt="Image text"></p>
+<p>如果SDK没有设置成功，可通过config-&gt;SDK，点击edit配置SDK路径，如下图：</p>
+<p><img src="/daixuenan.github.io/2018/08/13/develop/beign/environment/sdk_setting.png" alt="Image text"></p>
+<p><img src="/daixuenan.github.io/2018/08/13/develop/beign/environment/sdk_setting_path.png" alt="Image text"></p>
+<h2 id="至此，安装工作完成，接下来可以创建hello-world了，比较简单。如下图："><a href="#至此，安装工作完成，接下来可以创建hello-world了，比较简单。如下图：" class="headerlink" title="至此，安装工作完成，接下来可以创建hello world了，比较简单。如下图："></a>至此，安装工作完成，接下来可以创建hello world了，比较简单。如下图：</h2><h5 id="点击Start-a-new-Android-Studio-project"><a href="#点击Start-a-new-Android-Studio-project" class="headerlink" title="点击Start a new Android Studio project"></a>点击Start a new Android Studio project</h5><p><img src="/daixuenan.github.io/2018/08/13/develop/beign/environment/as_installed.png" alt="Image text"></p>
+<h5 id="按照提示输入项目名称、域名，选择项目目录"><a href="#按照提示输入项目名称、域名，选择项目目录" class="headerlink" title="按照提示输入项目名称、域名，选择项目目录"></a>按照提示输入项目名称、域名，选择项目目录</h5><p><img src="/daixuenan.github.io/2018/08/13/develop/beign/environment/create_project.png" alt="Image text"></p>
+<h5 id="选择手机平板开发即可，点击next"><a href="#选择手机平板开发即可，点击next" class="headerlink" title="选择手机平板开发即可，点击next"></a>选择手机平板开发即可，点击next</h5><p><img src="/daixuenan.github.io/2018/08/13/develop/beign/environment/start_project2.png" alt="Image text"></p>
+<h5 id="选择Empty-Activity，点击next"><a href="#选择Empty-Activity，点击next" class="headerlink" title="选择Empty Activity，点击next"></a>选择Empty Activity，点击next</h5><p><img src="/daixuenan.github.io/2018/08/13/develop/beign/environment/start_project3.png" alt="Image text"></p>
+<h5 id="点击finish-即可完成一个项目的创建"><a href="#点击finish-即可完成一个项目的创建" class="headerlink" title="点击finish,即可完成一个项目的创建"></a>点击finish,即可完成一个项目的创建</h5><p><img src="/daixuenan.github.io/2018/08/13/develop/beign/environment/start_project4.png" alt="Image text"></p>
+<h5 id="项目创建成功"><a href="#项目创建成功" class="headerlink" title="项目创建成功"></a>项目创建成功</h5><p><img src="/daixuenan.github.io/2018/08/13/develop/beign/environment/create_project_success.png" alt="Image text"></p>
+<p>接下来就可以运行项目在手机上了</p>
 <h6 id="原创地址-https-13811914041-github-io-daixuenan-github-io-1"><a href="#原创地址-https-13811914041-github-io-daixuenan-github-io-1" class="headerlink" title="原创地址 https://13811914041.github.io/daixuenan.github.io/"></a>原创地址 <a href="https://13811914041.github.io/daixuenan.github.io/">https://13811914041.github.io/daixuenan.github.io/</a></h6>
           
         
